@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Thunder Sign Editor</title>
+  <link href="lib/quill.snow.css" rel="stylesheet">
+  <link href="popup.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="icon.png">
+</head>
+<body>
+  <div id="container">
+  
+    <h2>Thunder Sign Editor</h2>
+    <div id="errors" aria-live="polite"></div>
+    <label for="identities">Account:</label>
+    <select id="identities" aria-label="Account selector"></select>
+    <div id="editor-toolbar">
+      <span class="ql-formats">
+        <select class="ql-font"></select>
+        <select class="ql-size"></select>
+      </span>
+      <span class="ql-formats">
+        <button class="ql-bold"></button>
+        <button class="ql-italic"></button>
+        <button class="ql-underline"></button>
+        <button class="ql-strike"></button>
+      </span>
+      <span class="ql-formats">
+        <button class="ql-list" value="ordered"></button>
+        <button class="ql-list" value="bullet"></button>
+      </span>
+      <span class="ql-formats">
+        <button class="ql-link"></button>
+        <button id="add-image" title="Add image">🖼️</button>
+        <button class="ql-clean"></button>
+      </span>
+      <span class="ql-formats">
+        <button id="color-picker-btn" title="Custom text color">🎨</button>
+        <button id="bgcolor-picker-btn" title="Custom background color">🖌️</button>
+      </span>
+    </div>
+    <div id="editor" aria-label="Signature editor"></div>
+    <div id="actions">
+      <button id="copy">Copy Signature</button>
+      <button id="apply">Apply Signature</button>
+      <button id="reset">Reset</button>
+    </div>
+  </div>
+  <script src="lib/quill.min.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
