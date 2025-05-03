@@ -22,7 +22,7 @@ Built with simplicity and flexibility in mind, it includes rich text editing fea
 
 - **Thunderbird WebExtensions API**
 - **Quill.js** for the visual editor
-- **Vanilla JavaScript**, **HTML**, and **CSS**
+- **JavaScript**, **HTML**, and **CSS**
 - **ChatGPT** (for assistant development support)
 
 ---
